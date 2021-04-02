@@ -1,0 +1,23 @@
+// This is the Mongodb Tutorial for Me!
+
+// How to Start Mongodb
+1. Open a new terminal session
+2. type "brew services start mongodb-community@4.4"
+3. Done!
+
+// How to End Mongodb
+1. Be in same or new terminal session from last lesson
+2. Type "brew services stop mongodb-community@4.4"
+3. Done!
+
+// How to Update Mongodb
+1. type "brew update"
+2. type "brew upgrade mongodb"
+3. Remember to change the start and end commands when you update!
+4. Done!
+
+// For more issues / Questions
+1. Refere to the Official Documentation 
+2. "https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/"
+3. Done!
+

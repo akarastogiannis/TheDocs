@@ -1,0 +1,6 @@
+// This is the Official .gitignore File for "TheDocs".
+
+// Removing .DS_Store from Git Repo
+.DS_Store
+
+

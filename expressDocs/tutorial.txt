@@ -1,0 +1,13 @@
+## This is a Tutorial on how to set up an express server on node.js ##
+
+#### Step 1 - Set up npm package in the folder ###
+-> npm init
+-> "Follow Steps through the situation to set up npm, modify changes if you like
+-> npm install express
+-> node <"name of .js file created that will house the express node commands">
+-> Control-C "To cancel the express terminal running"
+-> nodemon <"name of the .js file created that will house the expresse node cmd>
+
+-> "Then you are all set and ready to go, nodemon will update the server everytime you click save in your editor window."
+
+### This tutorial is written by: Athanasios C. Karastogiannis ###

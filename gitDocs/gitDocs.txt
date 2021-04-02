@@ -1,0 +1,68 @@
+This is the Git tutorial Page, Credits on the bottom of page.
+
+##Table of Contents##
+1. How to Initialize a git repo and connect it to github.
+2. How to push (update) changes to github from local repo.
+3. How to create the .gitignore file and update it to the github (Special Instructions).
+
+##Table of Contents Ended##
+----------------------------------------------------------
+##Chapter 1 - Initialize git repo and connect it to github##
+
+- git init
+- git add .
+- git commit -m "First commit"
+- git remote add origin https://github.com/akarastogiannis/<nameOfRepo>.git
+- git push -u origin master
+
+There you go that should have added the repo to your github properly.
+
+##End of Chapter 1##
+----------------------------------------------------------
+##Chapter 2 - How to push (update) changes to github from local repo##
+
+- git add .
+- git commit -m "<insert what notes you want to put in>"
+- git push origin master //or what ever branch you want to push too
+
+##Side Note##
+- git status = checks the status of the git branch.
+- git log = shows the entire branch of the repo and and what branches you have.
+
+Use these branches interchangeably when trying to push to your repo.
+
+##End of Chapter 2##
+----------------------------------------------------------
+##Chapter 3 - How to create the .gitignore file and update it to the github (Special Instructions)##
+
+-> Go to your project folder.
+- touch .gitignore
+- vim .gitignore
+- a // This will allow you to start editing the File.
+-> Open up .gitignore and edit inside .gitignore.
+- *.DS_Store
+// This will delete the .DS_Store file on github from mac.
+-> Hit ESCAPE // This puts you in command mode in Vim.
+- :w // This saves the file.
+- :x // This exits the file.
+// Now that you have ignored .DS_Store, you know need to update repo and github with the new official changes.
+
+##Push to Github##
+-----------------------------
+- - > Seek the information in Chapter 2. 
+
+##Special Steps##
+-----------------------------
+// Only continue to this step after you push to github.
+- git rm -rf --cached .
+- git add .
+// Must do Chapter 2 again and push to git again.
+
+// This removes all the files from the repo and adds them back in with the .gitignore file working correctly. 
+
+##End of Chapter 3##
+----------------------------------------------------------
+
+
+
+#Credits - By: Athanasios C. Karastogiannis
