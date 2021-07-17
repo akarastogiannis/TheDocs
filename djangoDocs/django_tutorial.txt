@@ -1,0 +1,21 @@
+Python Django Tutorial
+
+Key
+
+*py stands for python
+
+
+Steps to continue project
+
+**Be sure to be in the correct project folder first**
+
+1. run "pipenv shell"
+
+2. run "py manage.py runserver"
+
+
+Steps to make a new App
+
+1. run "py manage.py startapp <name of app>"
+
+2. Register that app in the settings.py file, in installed_apps = type in the name of the app in single quotes.
