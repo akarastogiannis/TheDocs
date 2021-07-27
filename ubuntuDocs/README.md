@@ -6,7 +6,7 @@
 
 There are two main paths:
 1. Terminal
-2. GUI App
+2. GUI App  
 
 ### Terminal
 
