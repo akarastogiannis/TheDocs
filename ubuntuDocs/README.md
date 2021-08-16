@@ -10,5 +10,16 @@ There are two main paths:
 
 ### Terminal
 
+#### How to Open a File in TextEdit
+
+If Linux
+> `xdg-open <file name>`
+
+If OSX
+> `open <file name>`
+
+If Windows
+> `start <file name>
+
 Will Finish Later
 ### GUI App
