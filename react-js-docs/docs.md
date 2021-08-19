@@ -9,7 +9,7 @@
 
 ### Passing Variables
 
-`const name = 'Bob'`
+`const name = 'Bob'`<br>
 `<h2> Hi - { name } </h2>`
 
 Output:<br>
@@ -20,11 +20,11 @@ Output:<br>
 `<h1>2 + 2 = { 2+2 }</h1>`
 
 Output:<br>
-"2 + 2 = 4
+"2 + 2 = 4"
 
 ### Ternary (Conditional) Operaters
 
-`const a = true`
+`const a = true`<br>
 `<h1> a is = {a ? 'True' : 'False' } </h1>`
 
 Output:<br>
