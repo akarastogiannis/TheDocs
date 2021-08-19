@@ -29,3 +29,13 @@ Output:<br>
 
 Output:<br>
 "a is True"
+
+## Components in JSX
+
+### Rules
+
+1. All JS Components begin with a capital letter.
+2. End in .js for JS Files.
+3. Every React Component does not need to import React anymore.
+
+
