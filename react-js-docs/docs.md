@@ -15,7 +15,7 @@ const name = 'Bob'
 ```
 
 Output:<br>
-> Hi Bob
+>Hi Bob
 
 ### Computation in JSX
 ```
