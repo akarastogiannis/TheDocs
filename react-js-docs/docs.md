@@ -38,4 +38,16 @@ Output:<br>
 2. End in .js for JS Files.
 3. Every React Component does not need to import React anymore.
 
+### Creating a Component
 
+`import React from 'react'
+
+const Header = () => {
+	return (
+		<header>
+			<h1>Header</h1>
+		</header>
+	)
+}
+
+export default Header`
