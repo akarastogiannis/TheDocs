@@ -9,26 +9,28 @@
 
 ### Passing Variables
 
-`const name = 'Bob'`<br>
-`<h2> Hi - { name } </h2>`
+```
+const name = 'Bob'
+<h2> Hi - { name } </h2>
+```
 
 Output:<br>
-"Hi Bob"
+> Hi Bob
 
 ### Computation in JSX
-
-`<h1>2 + 2 = { 2+2 }</h1>`
-
+```
+<h1>2 + 2 = { 2+2 }</h1>
+```
 Output:<br>
-"2 + 2 = 4"
+> 2 + 2 = 4
 
 ### Ternary (Conditional) Operaters
-
-`const a = true`<br>
-`<h1> a is = {a ? 'True' : 'False' } </h1>`
-
+```
+const a = true
+<h1> a is = {a ? 'True' : 'False' }
+```
 Output:<br>
-"a is True"
+> a is True
 
 ## Components in JSX
 
