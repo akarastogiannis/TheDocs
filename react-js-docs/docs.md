@@ -72,6 +72,7 @@ function App() {
 
 export default App;
 ```
+<br>
 
 > #### The key takeaways being: <br>
 >
