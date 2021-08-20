@@ -15,7 +15,7 @@ const name = 'Bob'
 ```
 
 Output:<br>
->Hi Bob
+> Hi Bob
 
 ### Computation in JSX
 ```
@@ -72,5 +72,10 @@ function App() {
 
 export default App;
 ```
+The key takeaways being: <br>
+`import Header from './components/Header'`<br>
+
+`<Header />`
+
 
 
