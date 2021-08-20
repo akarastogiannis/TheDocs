@@ -72,7 +72,7 @@ function App() {
 
 export default App;
 ```
-***The key takeaways being:*** <br>
+**The key takeaways being:** <br>
 ---
 
 `import Header from './components/Header'`<br>
