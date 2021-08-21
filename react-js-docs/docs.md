@@ -40,7 +40,7 @@ Output:<br>
 2. End in .js for JS Files.
 3. Every React Component does not need to import React anymore.
 
-### Creating a Component
+### Creating a Function Component
 
 ```
 import React from 'react'
@@ -79,4 +79,18 @@ export default App;
 > `import Header from './components/Header'`<br>
 > 
 > `<Header />`
+
+### Creating a Class Component
+
+```
+import React from 'react'
+
+class App extends React.Component {
+	render() {
+		return <h1> Hello from a class lol </h1>
+	}
+}
+
+export default App
+```
 
