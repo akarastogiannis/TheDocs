@@ -111,7 +111,7 @@ const App = () => {
 export default App
 ```
 
-<span style="color:blue" >In Header.js</span>
+In Header.js
 
 ```
 const Header = (props) => {
