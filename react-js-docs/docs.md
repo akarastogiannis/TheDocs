@@ -117,7 +117,7 @@ In Header.js
 const Header = (props) => {
 	return (
 		<header>
-			<h1> {props.title} </h1>
+			<h1> <span style="color:blue">{props.title}</span> </h1>
 		</header>
 	)
 }
