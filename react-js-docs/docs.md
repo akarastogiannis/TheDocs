@@ -95,6 +95,8 @@ export default App
 ```
 ## Component Props
 
+### Passed Props
+
 In App.js
 
 ```
@@ -125,4 +127,38 @@ const Header = (props) => {
 export default Header
 ```
 
+### Default Props
 
+In App.js
+
+```
+import Header from './components/Header'
+
+const App = () => {
+	return (
+		<div className='Container'>
+			<Header />
+		</div>
+	)
+}
+
+export default App
+```
+
+In Header.js
+
+```
+const Header = (props) => {
+	return (
+		<header>
+			<h1> {props.title} </h1>
+		</header>
+	)
+}
+
+Header.defaultProps = {
+	title: 'Hello',
+}
+
+export default Header
+```
