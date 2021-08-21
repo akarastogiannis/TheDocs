@@ -93,4 +93,36 @@ class App extends React.Component {
 
 export default App
 ```
+## Component Props
+
+In App.js
+
+```
+import Header from './components/Header'
+
+const App = () => {
+	return (
+		<div className='Container'>
+			<Header title="hello" />
+		</div>
+	)
+}
+
+export default App
+```
+
+In Header.js
+
+```
+const Header = (props) => {
+	return (
+		<header>
+			<h1> {props.title} </h1>
+		</header>
+	)
+}
+
+export default Header
+```
+
 
