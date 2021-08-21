@@ -111,13 +111,13 @@ const App = () => {
 export default App
 ```
 
-In Header.js
+<span style="color:blue" >In Header.js</span>
 
 ```
 const Header = (props) => {
 	return (
 		<header>
-			<h1> <span style="color:blue">{props.title}</span> </h1>
+			<h1> {props.title} </h1>
 		</header>
 	)
 }
