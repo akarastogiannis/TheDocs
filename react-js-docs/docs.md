@@ -127,6 +127,37 @@ const Header = (props) => {
 export default Header
 ```
 
+### Specific Passed Props
+
+```
+import Header from './components/Header'
+
+const App = () => {
+	return (
+		<div className='Container'>
+			<Header title="hello" />
+		</div>
+	)
+}
+
+export default App
+```
+
+In Header.js
+
+```
+const Header = ( { title } ) => {
+	return (
+		<header>
+			<h1> {title} </h1>
+		</header>
+	)
+}
+
+export default Header
+```
+
+
 ### Default Props
 
 In App.js
