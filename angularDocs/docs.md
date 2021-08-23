@@ -54,10 +54,23 @@ export class AppComponent {
 <p>{{ 2>1? 'Hello': 'Hi' }}</p>
 ```
 
+## How to create a new Component
+
+1. Cd into dir.
+2. Type: `ng generate component <component-name>`.
+3. Done.
+
+## How to create a new Component in a folder
+
+1. Cd into dir.
+2. Type: `ng generate component <folder-name>/<component-name>`.
+3. Ex: `ng generate component component/footer`.
+4. Done.
+
 ## Side Notes
 
 * The App component is embeded in the root Html.
 * Every other component we make gets embeded into the app.component.html.
 * Use Typescript.s
 * The Stye.css is for global style.
-* 
+* Use `ngOnInit()` in component.ts file in component folder most of the times when you initalize some code
