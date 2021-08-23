@@ -22,7 +22,7 @@
 
 ## String Interpolation (Pass variable to html)
 
-1. In export class <component-name> place the variable and type you want to add.
+1. In export class **component-name** place the variable and type you want to add.
 
 ```
 export class AppComponent {
@@ -30,7 +30,7 @@ export class AppComponent {
 }
 ```
 
-2. In <component-name> html place the variable in double curly braces {{}} with variable name to display.
+2. In **component-name** html place the variable in double curly braces {{}} with variable name to display.
 
 ```
 <p>{{ title }}</p>
@@ -135,10 +135,108 @@ export class ButtonComponent implements OnInit {
 
 6. Done.
 
+## onClick handler for button in Component <Part 1>
 
+1. In **< component-name >.component.html** in the button tag add an click method to method name. Notice the `(click)="onClick()"` this means you want to make clickable and connected to a method named 'onClick'.
 
-26.46 in video
+```
+<button  
+    [ngStyle]="{'background-color': color}" 
+    class="btn"
+    (click)="onClick()"
+>
+    {{ text }}
+</button>
+```
 
+2. Then in **< component-name >.components.ts** file when you are exporting the button add the method we named 'onClick()'. Notice the `onClick()` method we added and for the example we have the button log a 'Add Clicked' message when clicked.
+
+```
+export class ButtonComponent implements OnInit {
+  @Input() text: string = 'Click';
+  @Input() color: string = 'blue';
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+  onClick() {
+    console.log("Add Clicked");
+  }
+
+}
+```
+
+3. Done.
+
+## Output for onClick handler EventEmitter (To make the button function more re-usable) <Part 2>
+
+1. Import `Output` and `EventEmitter` from angular/core.
+
+```
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+```
+
+2. In export class of the component create an Output EventEmitter function. And reference it in the onClick function.
+
+`  @Output() btnClick = new EventEmitter();`
+
+```
+ /* Handle the button click */
+  onClick() {
+    this.btnClick.emit();
+  }
+```
+
+```
+export class ButtonComponent implements OnInit {
+  @Input() text: string = 'Click';
+  @Input() color: string = 'blue';
+  @Output() btnClick = new EventEmitter();
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+  /* Handle the button click */
+  onClick() {
+    this.btnClick.emit();
+  }
+
+}
+```
+
+3. Then in the **< parent-name >.component.html** that houses an instance of that child component you can then refrence that function name to push it to do your own function in the **< parent-name >.component.ts** file.
+
+`<app-button color="green" text="Add" (btnClick)="toggleAddTask()"></app-button>`
+
+4. And then in **< parent-name >.component.ts** you can add the function you want it to do, in export class.
+
+```
+toggleAddTask() {
+    console.log("Add Clicked");
+  }
+```
+
+```
+export class HeaderComponent implements OnInit {
+  title: string = 'task-tracker';
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+  toggleAddTask() {
+    console.log("Add Clicked");
+  }
+
+}
+```
+
+5. Done
 
 ## Side Notes
 
