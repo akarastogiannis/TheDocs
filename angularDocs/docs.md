@@ -94,6 +94,48 @@ header works!
 
 4. Done.
 
+## @Input, Sending data to a child Component from Parent
+
+1. Add Component specific properties in the child component tag in the Parent. Notice the color and text attributes.
+
+```
+<app-button color="green" text="Add"></app-button>
+```
+
+2. In the child component.ts file add the Import `Input` from angular/core.
+
+```
+import { Component, OnInit, Input } from '@angular/core';
+```
+
+3. Also when exporting the child class component in the child component.ts file, add their input calls. Notice how you must add a starting values for the attributes just in case you do not provide specific values for the attributes in the parent component.
+
+```
+export class ButtonComponent implements OnInit {
+  @Input() text: string = 'Click';
+  @Input() color: string = 'blue';
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+```
+
+4. Then in the child component.html add the text attribute with double curly brackets.
+
+```
+<button class="btn">{{ text }}</button>
+```
+
+5. Now for the specific color attribute, you must use `ngStyle` directive in brackets and curly bracktes and qutation marks.
+
+```
+<button  [ngStyle]="{'background-color': color}" class="btn">{{ text }}</button>
+```
+
+6. Done.
+
+
 ## Side Notes
 
 * The App component is embeded in the root Html.
