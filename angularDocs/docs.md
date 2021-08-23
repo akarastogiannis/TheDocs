@@ -136,6 +136,9 @@ export class ButtonComponent implements OnInit {
 6. Done.
 
 
+
+26.46 in video
+
 ## Side Notes
 
 * The App component is embeded in the root Html.
