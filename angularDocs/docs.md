@@ -238,6 +238,60 @@ export class HeaderComponent implements OnInit {
 
 5. Done
 
+## Create an Interface (Schema) for a Data Structure
+
+1. Add in the app folder the name of the Interface (Preferably starting with a capital letter).
+
+`Task.ts`
+
+2. Then in `Task.ts` you want to make the interface exportable so you declare it like this.
+
+```
+export interface Task {
+    /* id has question mark b/c its not needed when creating a new task */
+    id?: number;
+    text: string;
+    day: string;
+    reminder: boolean;
+}
+```
+
+3. Then in your Data Structure (Ex. Json File) you need to import it and set its type to the interface you created.
+
+`import { Task } from './Task';`
+
+`export const TASKS: Task[] = [`
+
+```
+/* We also have to import Task here */
+import { Task } from './Task';
+
+/* We add the type, which is Task, and it is an array Task[] */
+export const TASKS: Task[] = [
+  {
+    id: 1,
+    text: 'Doctors Appointment',
+    day: 'May 5th at 2:30pm',
+    reminder: true,
+  },
+  {
+    id: 2,
+    text: 'Meeting at School',
+    day: 'May 6th at 1:30pm',
+    reminder: true,
+  },
+  {
+    id: 3,
+    text: 'Food Shopping',
+    day: 'May 7th at 12:30pm',
+    reminder: false,
+  },
+];
+```
+4. Angular might import it and set its type automatically.
+
+5. Done.
+
 ## Side Notes
 
 * The App component is embeded in the root Html.
