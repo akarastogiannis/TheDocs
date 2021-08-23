@@ -67,6 +67,33 @@ export class AppComponent {
 3. Ex: `ng generate component component/footer`.
 4. Done.
 
+## Add custom component to App Component
+
+1. Add selector in custom component (should be auto generated).
+
+```
+@Component({
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
+})
+```
+
+2. Take the selector `app-header` and place in App component html as a tag.
+
+```
+<app-header></app-header>
+```
+
+3. Now whatever is in header.component.html is now also in app.component.html at that exact location.
+
+```
+Output:<br>
+header works!
+```
+
+4. Done.
+
 ## Side Notes
 
 * The App component is embeded in the root Html.
