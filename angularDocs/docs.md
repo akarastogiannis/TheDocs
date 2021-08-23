@@ -238,7 +238,7 @@ export class HeaderComponent implements OnInit {
 
 5. Done
 
-## Create an Interface (Schema) for a Data Structure
+## Create an Interface (Schema/Rules) for a Data Structure <Part 1>
 
 1. Add in the app folder the name of the Interface (Preferably starting with a capital letter).
 
@@ -289,6 +289,47 @@ export const TASKS: Task[] = [
 ];
 ```
 4. Angular might import it and set its type automatically.
+
+5. Done.
+
+## How to use interface in a Component <Part 2>
+
+1. First create a new component in the components folder using ng generate.
+
+`ng generate component components/tasks`
+
+2. In the **< component-name >.component.ts** file you want to import the json data and the interface.
+
+`import {TASKS} from '../../mock-task';`
+
+`import {Task} from '../../Task';`
+
+3. Then you want to make it usuable in that component by adding it into the export class of that component.
+
+`tasks: Task[] = TASKS;`
+
+4. Overall it should look like this.
+
+```
+import { Component, OnInit } from '@angular/core';
+import {Task} from '../../Task';
+import {TASKS} from '../../mock-task';
+
+@Component({
+  selector: 'app-tasks',
+  templateUrl: './tasks.component.html',
+  styleUrls: ['./tasks.component.css']
+})
+export class TasksComponent implements OnInit {
+  tasks: Task[] = TASKS;
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
+```
 
 5. Done.
 
