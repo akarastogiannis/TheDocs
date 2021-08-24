@@ -333,6 +333,96 @@ export class TasksComponent implements OnInit {
 
 5. Done.
 
+## How to show json data in a Component with Interface <Part 3>
+
+1. In **< component-name >.component.html** use `*ngFor` to loop through the list and use double curly brackets to describe what you want to see.
+
+```
+<p *ngFor="let task of tasks">{{ task.text }}</p>
+```
+
+2. This will output:
+
+```
+Doctors Appointment
+Meeting at School
+Food Shopping
+```
+
+3. Done. 
+
+## How to show the json data in its own Component <Part 4>
+
+1. Create a new component called `task-item` using `ng generate`.
+
+`ng generate component components/task-item`
+
+2. Converte the paragraph tag into a `task-item` component tag in `tasks.component.html`.
+
+```
+<p *ngFor="let task of tasks">{{ task.text }}</p>
+```
+
+Turns into 
+
+```
+<app-task-item 
+    *ngFor="let task of tasks"
+    [task]="task"
+></app-task-item>
+```
+
+3. Now in `task-item.component.html` create a div to show the tasks.
+
+```
+<div class="task">
+    <h3>{{ task.text }}</h3>
+    <p>{{ task.day }}</p>
+</div>
+```
+
+4. Now we have to connect it all up in `task-item.components.ts` import `Input` from angular/core and `Task` from the task interface schema.
+
+`import { Component, OnInit, Input } from '@angular/core';`
+
+
+`import { Task } from '../../Task';`
+
+5. Now in the export class `task-item` component utilize the `@Input` and intialize task with Task. Notice how we do not need to set a default value because we are using the `!` optional mark.
+
+```
+/* Has the optional exclamation mark so that it does'nt need to be initalized with anything */
+  @Input()
+  task!: Task;
+```
+
+6. Overall it should look like this.
+
+```
+import { Component, OnInit, Input } from '@angular/core';
+import { Task } from '../../Task';
+
+@Component({
+  selector: 'app-task-item',
+  templateUrl: './task-item.component.html',
+  styleUrls: ['./task-item.component.css']
+})
+export class TaskItemComponent implements OnInit {
+
+  /* Has the optional exclamation mark so that it does'nt need to be initalized with anything */
+  @Input()
+  task!: Task;
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
+```
+
+7. Done.
+
 ## Side Notes
 
 * The App component is embeded in the root Html.
