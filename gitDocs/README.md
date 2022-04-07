@@ -44,4 +44,42 @@ git log = shows the entire branch of the repo and what other branches you have c
 
 ---
 
-a
+### Chapter 3 - How to create the .gitignore file and update it to github
+
+```
+-> Go to your project folder
+touch .gitignore
+vim .gitignore
+a // This will allow you to start editing in vim
+<Insert .gitignore commands>
+-> Hit ESCAPE
+:w // This command saves your file in vim
+:x // This command allows you to exit vim
+-> Push to Github (See Chapter 2)
+```
+
+#### Special Steps
+
+** WARNING** Only Continue to this step if you have already pushed to github
+
+'''
+This removes all the files from the github repo and adds them back in with the .gitignore file working correctly
+'''
+
+```
+git rm -rf --cached .
+git add .
+-> Do Chapter 2 again to push everything back to github
+```
+
+#### Side Notes
+
+```
+*.DS_Store // Removes all .DS_Store files (useless mac files) from your being saved to git repo
+```
+
+Link to useful info on .gitignore files = [Here](https://github.com/github/gitignore)
+
+### End of Chapter 3
+
+---
