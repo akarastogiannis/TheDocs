@@ -78,8 +78,24 @@ git add .
 *.DS_Store // Removes all .DS_Store files (useless mac files) from your being saved to git repo
 ```
 
-Link to useful info on .gitignore files = [Here](https://github.com/github/gitignore)
+Link to example .gitignore files = [Here](https://github.com/github/gitignore)
 
 ### End of Chapter 3
 
 ---
+
+### Chapter 4 - How to pull (update) your local git repo from github
+
+'''
+When you need to update your local git repo with the main github repo
+'''
+
+```
+git pull
+```
+
+### End of Chapter 4
+
+---
+
+####Credits - Athanasios Karastogiannis
