@@ -91,7 +91,7 @@ When you need to update your local git repo with the main github repo
 '''
 
 ```
-git pull
+git pull origin master
 ```
 
 ### End of Chapter 4
