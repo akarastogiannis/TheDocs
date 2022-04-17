@@ -6,6 +6,7 @@
 2. How to push (update) changes to github from local repo.
 3. How to create the .gitignore file and update it to the github (Special Instructions)
 4. How to pull (update) your git repo from github.
+5. How to handle multiple branches.
 
 ### End of Table of Contents
 
@@ -102,6 +103,42 @@ git pull origin master
 ```
 
 ### End of Chapter 4
+
+### Chapter 5. How to Handle Multiple Branches
+
+'''
+When you want to see what branches you have in your local repo (git)
+'''
+
+```
+git branch
+```
+
+'''
+When you want to create a new local (git) branch
+'''
+
+```
+git branch <nameOfTheBranchYouWantToCreate>
+```
+
+'''
+When you want to change from one git branch to another
+'''
+
+```
+git checkout <nameOfBranchYouWantToEnter>
+```
+
+'''
+When you want to push that second local (git) branch to a new github (remote) repo that you created just now
+'''
+
+```
+git commit -am "<Insert Personal Comments on your changes>"
+git push origin <nameOfLocal(git)Branch>
+```
+
 
 ---
 
