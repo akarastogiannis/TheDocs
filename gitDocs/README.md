@@ -30,7 +30,14 @@ git push -u origin master
 ```
 git add .
 git commit -m "<Insert Personal Comments on your changes>"
-git push origin master
+git push origin <nameOfBranch>
+```
+
+or 
+
+```
+git commit -am "<Insert Personal Comments on your changes>"
+git push origin <nameOfBranch>
 ```
 
 #### Side Note
