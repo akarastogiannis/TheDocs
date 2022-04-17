@@ -141,6 +141,25 @@ git commit -am "<Insert Personal Comments on your changes>"
 git push origin <nameOfLocal(git)Branch>
 ```
 
+'''
+When you want to push your second branch to another local branch
+'''
+
+```
+git push <remote> <localBranch>:<remoteName>
+
+example:
+
+Two Branches:
+-myFeature
+-feature
+
+You want to update the feature branch with the stuff from myFeature Branch
+
+git push origin myFeature:feature
+```
+
+
 ### End of Chapter 5
 
 
