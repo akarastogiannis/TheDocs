@@ -159,6 +159,13 @@ You want to update the feature branch with the stuff from myFeature Branch
 git push origin myFeature:feature
 ```
 
+More Info on branches here 
+
+- [dev Connected Tutorial](https://devconnected.com/how-to-push-git-branch-to-remote/)
+
+
+More info coming later
+
 
 ### End of Chapter 5
 
