@@ -104,6 +104,8 @@ git pull origin master
 
 ### End of Chapter 4
 
+---
+
 ### Chapter 5. How to Handle Multiple Branches
 
 '''
@@ -138,6 +140,8 @@ When you want to push that second local (git) branch to a new github (remote) re
 git commit -am "<Insert Personal Comments on your changes>"
 git push origin <nameOfLocal(git)Branch>
 ```
+
+### End of Chapter 5
 
 
 ---
