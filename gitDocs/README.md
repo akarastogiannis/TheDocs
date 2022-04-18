@@ -36,9 +36,7 @@ git push origin <nameOfBranch>
 
 or 
 
-'''
 *** Warning The Second Method only adds changes with current files if created a new file the new file will not be added, please use the first method ***
-'''
 
 ```
 git commit -am "<Insert Personal Comments on your changes>"
