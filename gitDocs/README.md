@@ -47,7 +47,7 @@ git push origin <nameOfBranch>
 
 ```
 git status = checks the status of the git branch
-git log = shows the entire branch of the repo and what other branches you have created
+git log = shows all the git commits you have done in that past
 ```
 
 ### End of Chapter 2
@@ -85,7 +85,7 @@ git add .
 #### Side Notes
 
 ```
-*.DS_Store // Removes all .DS_Store files (useless mac files) from your being saved to git repo
+*.DS_Store // Removes a useless mac file from ever being saved into your repo
 ```
 
 Link to example .gitignore files = [Here](https://github.com/github/gitignore)
